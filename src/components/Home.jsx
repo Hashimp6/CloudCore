@@ -13,7 +13,7 @@ export default function HomeWelcome() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/5353146.jpg')", // use / for public folder
+          backgroundImage: "url('/CloudCore/5353146.jpg')",
           filter: "brightness(0.6)",
         }}
       />
