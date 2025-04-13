@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import backgroundImage from './assets/5353146.jpg';
 
 export default function HomeWelcome() {
   const [opacity, setOpacity] = useState(0);
@@ -13,7 +14,7 @@ export default function HomeWelcome() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/CloudCore/5353146.jpg')",
+          backgroundImage: `url(${backgroundImage})`,
           filter: "brightness(0.6)",
         }}
       />
