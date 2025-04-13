@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import backgroundImage from "../../public/5353146.jpg";
+import backgroundImage from "../assets/5353146.jpg";
 
 export default function HomeWelcome() {
   const [opacity, setOpacity] = useState(0);
