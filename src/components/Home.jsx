@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import backgroundImage from './assets/5353146.jpg';
+import backgroundImage from "../../public/5353146.jpg";
 
 export default function HomeWelcome() {
   const [opacity, setOpacity] = useState(0);
@@ -36,7 +36,8 @@ export default function HomeWelcome() {
         </h1>
 
         <p className="text-lg md:text-xl text-blue-100 font-light mb-6">
-        "All-in-One Tech Partner for Growing Enterprises."</p>
+          "All-in-One Tech Partner for Growing Enterprises."
+        </p>
 
         <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold text-md transition-all duration-300 transform hover:scale-105 shadow-lg">
           Get Started
