@@ -7,45 +7,46 @@ const servicesData = [
     id: 1,
     title: "Web Development",
     description:
-      "Custom website development tailored to your business needs with responsive design and modern technologies.",
-    image: "./website.jpg",
+      "We craft high-performance, responsive, and visually appealing websites tailored to your business goals. Our expertise covers everything from static business sites to complex dynamic platforms, built using modern frameworks like React, Next.js, and Node.js. We focus on speed, SEO optimization, cross-device compatibility, and seamless user experience.",
+    image: "/website.jpg",
   },
   {
     id: 2,
     title: "Mobile Applications",
     description:
-      "Native and cross-platform mobile app development for iOS and Android with intuitive user interfaces.",
-    image: "./app.jpg",
+      "We design and develop feature-rich mobile applications for both Android and iOS platforms. Whether you need a native app for maximum performance or a cross-platform solution using frameworks like React Native or Flutter, we deliver intuitive, user-friendly apps that align with your business workflows and provide an engaging customer experience.",
+    image: "/app.jpg",
   },
   {
     id: 3,
     title: "UI/UX Design",
     description:
-      "User-centric design focusing on creating engaging and intuitive experiences that convert visitors into customers.",
-    image: "./ui.jpg",
+      "Our UI/UX design service focuses on creating visually stunning and highly interactive interfaces. We combine research-driven user insights, wireframing, prototyping, and aesthetic design to ensure your digital product offers a seamless and enjoyable experience. Our goal is to improve user retention, conversions, and satisfaction through thoughtful, user-centric design.",
+    image: "/ui.jpg",
   },
   {
     id: 4,
     title: "Digital Marketing",
     description:
-      "Strategic digital marketing services to increase your online presence and drive qualified traffic to your business.",
-    image: "./digital.jpg",
+      "We provide comprehensive digital marketing solutions to enhance your brand’s online visibility and attract your target audience. Our services include social media marketing, search engine optimization (SEO), pay-per-click advertising (PPC), email campaigns, and content marketing strategies — all tailored to boost traffic, leads, and sales.",
+    image: "/digital.jpg",
   },
   {
     id: 5,
     title: "Branding",
     description:
-      "Scalable cloud infrastructure setup and management to optimize your business operations and data security.",
-    image: "./brand.jpg",
+      "We help businesses establish a strong, memorable, and consistent brand identity across all digital and print platforms. From logo design and brand guidelines to visual assets and messaging strategy, our branding service ensures your business connects emotionally with your audience and stands out in the competitive market.",
+    image: "/brand.jpg",
   },
   {
     id: 6,
     title: "IT Consulting",
     description:
-      "Expert guidance on technology solutions that align with your business goals and drive digital transformation.",
-    image: "./consulting.jpg",
+      "Our IT consulting services empower businesses to make informed, strategic technology decisions. We analyze your existing infrastructure, recommend optimal solutions, and guide you through implementation — whether it's modernizing legacy systems, adopting cloud platforms, improving cybersecurity, or optimizing digital operations for better efficiency and growth.",
+    image: "/consulting.jpg",
   },
 ];
+
 
 const ServiceCard = ({ service, index }) => {
   const isEven = index % 2 === 0;
@@ -81,12 +82,12 @@ const ServiceCard = ({ service, index }) => {
 
           <p className="mb-6 text-gray-700">{service.description}</p>
 
-          <div className="mt-auto">
+          {/* <div className="mt-auto">
             <button className="flex items-center space-x-2 group/btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-all duration-300">
               <span>Learn More</span>
               <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -100,7 +101,7 @@ const ServiceCard = ({ service, index }) => {
 
 export default function ServicesSection() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section  id="services" className="py-16 px-4 bg-gray-50">
       <div className="container mx-auto">
         <div className="relative mb-16 text-center">
           <h2 className="text-4xl font-bold relative z-10 inline-block mb-4">

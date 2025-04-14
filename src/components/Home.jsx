@@ -9,7 +9,7 @@ export default function HomeWelcome() {
   }, []);
 
   return (
-    <div className="relative w-full h-[85vh] flex items-center justify-start overflow-hidden px-6 md:px-20">
+    <div id="home" className="relative w-full h-[85vh] flex items-center justify-start overflow-hidden px-6 md:px-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"

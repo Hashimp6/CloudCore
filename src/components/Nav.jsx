@@ -12,11 +12,7 @@ const Nav = () => {
       <div className=" mx-auto flex justify-between items-center px-8 py-2">
         {/* Logo - Responsive sizing with proper alignment */}
         <div className="flex  items-center">
-          <img
-            src="./logo.jpg"
-            alt="CloudCore Logo"
-            className="h-14 md:h-12"
-          />
+          <img src="/logo.jpg" alt="CloudCore Logo" className="h-14 md:h-12" />
         </div>
 
         {/* Mobile menu button */}
