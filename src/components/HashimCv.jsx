@@ -279,7 +279,7 @@ const Portfolio = () => {
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-4 pt-8">
                 <div className="text-center p-4 bg-white/5 rounded-lg backdrop-blur-lg border border-white/10">
-                  <div className="text-2xl md:text-3xl font-bold text-blue-400">Multiple</div>
+                  <div className="text-2xl md:text-3xl font-bold text-blue-400">20+</div>
                   <div className="text-sm md:text-base text-gray-300">Projects Delivered</div>
                 </div>
                 <div className="text-center p-4 bg-white/5 rounded-lg backdrop-blur-lg border border-white/10">
