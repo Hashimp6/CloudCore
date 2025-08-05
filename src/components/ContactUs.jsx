@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { db } from "../firebase"; // ✅ import Firestore instance
 import { collection, addDoc } from "firebase/firestore";
-
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -47,6 +46,59 @@ const ContactUs = () => {
             We would love to hear from you! Whether you have questions, suggestions, or just want to say hi, feel free to send us a message.
             Our team is here to help you.
           </p>
+        </div>
+
+        {/* Contact Information Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Email Card */}
+          <div className="bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-700 text-center hover:bg-gray-800 transition-all duration-300">
+            <div className="flex justify-center mb-4">
+              <FaEnvelope className="text-4xl text-blue-500" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 text-white">Email Us</h3>
+            <a 
+              href="mailto:cloudcoresolutionsuk@gmail.com" 
+              className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
+            >
+              cloudcoresolutionsuk@gmail.com
+            </a>
+          </div>
+
+          {/* UK Phone Card */}
+          <div className="bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-700 text-center hover:bg-gray-800 transition-all duration-300">
+            <div className="flex justify-center mb-4">
+              <FaPhone className="text-4xl text-green-500" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 text-white">UK Office</h3>
+            <div className="space-y-2">
+              <a 
+                href="tel:+447776697665" 
+                className="block text-green-400 hover:text-green-300 transition-colors duration-300"
+              >
+                +44 777 669 7665
+              </a>
+              <a 
+                href="tel:+447442580062" 
+                className="block text-green-400 hover:text-green-300 transition-colors duration-300"
+              >
+                +44 744 258 0062
+              </a>
+            </div>
+          </div>
+
+          {/* India Phone Card */}
+          <div className="bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-700 text-center hover:bg-gray-800 transition-all duration-300">
+            <div className="flex justify-center mb-4">
+              <FaPhone className="text-4xl text-orange-500" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 text-white">India Office</h3>
+            <a 
+              href="tel:+918304025594" 
+              className="text-orange-400 hover:text-orange-300 transition-colors duration-300"
+            >
+              +91 830 402 5594
+            </a>
+          </div>
         </div>
 
         {/* Contact Form */}
